@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>Shop</title>
+    <!-- Vendor styles -->
+    <link rel="stylesheet" href="assets/css/bsgrid.min.css">
+    <link rel="stylesheet" href="assets/vendor/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/page_shop.css">
+
+
+    <!-- Vendor Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
+</head>
+<body>
+    <header id="header">
+        <section class="header_info bg-dark elv-10">
+            <div class="content-container d-flex align-items-center justify-content-center justify-content-md-start py-1">
+                <p class="text text-white">Free delivery - On all orders over $60</p>
+                <div class="text-white social ml-auto d-none d-md-block">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </section>
+        <section class="header_main elv-9 bg-white">
+            <div class="content-container d-flex align-items-center justify-content-md-between">
+                <div class="drawer-trigger d-block d-md-none">
+                    <div class="hamburger hamburger--spin">
+                        <div class="hamburger-box">
+                            <div class="hamburger-inner"></div>
+                        </div>
+                    </div>
+                </div>
+                <nav class="menu-left d-none d-md-block">
+                    <ul>
+                        <li class=""><a href="/">Home</a></li>
+                        <li class="active"><a href="/shop.html">Shop</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Journal</a></li>
+                    </ul>
+                </nav>
+                <div class="sitelogo">
+                    <a href="/">
+                        <img src="assets/img/logo_blk.png" alt="logo">
+                    </a>
+                </div>
+                <nav class="menu-right ml-auto">
+                    <ul>
+                        <li class="d-none d-md-block"><a href="/login.html">Login</a></li>
+                        <li class="d-none d-md-block"><a href="#" class="search-trigger">
+                            <i data-feather="search"></i>
+                        </a></li>
+                        <li><a href="#">
+                            <i data-feather="shopping-bag"></i>
+                            <span class="badge">2</span>
+                        </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <div class="site-drawer elv-8 d-block d-md-none">
+            <div class="content-container">
+                <div class="drawer-content group">
+                    <a href="#" class="d-flex align-items-center search-trigger">
+                        <span class="icon mr-2 align-items-center justify-content-center">
+                            <i data-feather="search" height="16" width="16"></i>
+                        </span>
+                        Search
+                    </a>
+                    <a href="/login.html" class="d-flex align-items-center">
+                        <span class="icon mr-2 align-items-center justify-content-center">
+                            <i data-feather="log-in" height="16" width="16"></i>
+                        </span>
+                        Log in
+                    </a>
+                </div>
+                <div class="drawer-content group">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Journal</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="drawer-content social">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="search-drawer elv-10">
+            <div class="exit">
+                <i data-feather="x" width="30" height="30"></i>
+            </div>
+            <div class="content-container">
+                <form class="search-animation" action="/" class="mb-3">
+                    <input tabindex="0" type="search" name="search" placeholder="Type your search here">
+                </form>
+                <p class="form-caption">Enter your search & hit enter</p>
+            </div>
+        </div>
+    </header>
+    <main id="shop" style="opacity: 0; transform: translateY(40px);" class="py-5">
+        <div class="content-container">
+            <section class="content-header">
+                <h3 class="title mb-5">All Products</h3>
+            </section>
+            <section class="content-body products">
+                <div class="product-container container-fluid px-0 mx-0 py-3">
+                    <div class="row no-gutters mx-n2">
+                        <div class="col-6 col-md-3 px-2">
+                            <div class="item">
+                                <div class="pic" style="width: 100%; padding-bottom: 120%;">
+                                    <div class="badge elv-2 bold">
+                                        20% off
+                                    </div>
+                                    <div class="images">
+                                        <a href="/single.html" class="d-block inner">
+                                            <img class="primary image-child" src="assets/img/bag-1.jpg" alt="#">
+                                            <img class="sub image-child" src="assets/img/bag-2.jpg" alt="#">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="details">
+                                    <a href="/single.html">
+                                        <div class="title bold">Product Name</div>
+                                    </a>
+                                    <div class="prices bold">
+                                        Rp.30.000
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 px-2">
+                            <div class="item">
+                                <div class="pic" style="width: 100%; padding-bottom: 120%;">
+                                    <div class="badge elv-2 bold">
+                                        Sale
+                                    </div>
+                                    <div class="images">
+                                        <a href="/single.html" class="d-block inner">
+                                            <img class="primary image-child" src="assets/img/bag-3.jpg" alt="#">
+                                            <img class="sub image-child" src="assets/img/bag-5.jpg" alt="#">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="details">
+                                    <a href="/single.html">
+                                        <div class="title bold">Product Name</div>
+                                    </a>
+                                    <div class="prices bold">
+                                        Rp.30.000
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 px-2">
+                            <div class="item">
+                                <div class="pic" style="width: 100%; padding-bottom: 120%;">
+                                    <div class="badge elv-2 bold">
+                                        Sale
+                                    </div>
+                                    <div class="images">
+                                        <a href="/single.html" class="d-block inner">
+                                            <img class="primary image-child" src="assets/img/bag-2.jpg" alt="#">
+                                            <img class="sub image-child" src="assets/img/bag-3.jpg" alt="#">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="details">
+                                    <a href="/single.html">
+                                        <div class="title bold">Product Name</div>
+                                    </a>
+                                    <div class="prices bold">
+                                        Rp.30.000
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 px-2">
+                            <div class="item">
+                                <div class="pic" style="width: 100%; padding-bottom: 120%;">
+                                    <div class="badge elv-2 bold">
+                                        Sale
+                                    </div>
+                                    <div class="images">
+                                        <a href="/single.html" class="d-block inner">
+                                            <img class="primary image-child" src="assets/img/bag-4.jpg" alt="#">
+                                            <img class="sub image-child" src="assets/img/bag-5.jpg" alt="#">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="details">
+                                    <a href="/single.html">
+                                        <div class="title bold">Product Name</div>
+                                    </a>
+                                    <div class="prices bold">
+                                        Rp.30.000
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 px-2">
+                            <div class="item">
+                                <div class="pic" style="width: 100%; padding-bottom: 120%;">
+                                    <div class="badge elv-2 bold">
+                                        Sale
+                                    </div>
+                                    <div class="images">
+                                        <a href="/single.html" class="d-block inner">
+                                            <img class="primary image-child" src="assets/img/bag-4.jpg" alt="#">
+                                            <img class="sub image-child" src="assets/img/bag-3.jpg" alt="#">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="details">
+                                    <a href="/single.html">
+                                        <div class="title bold">Product Name</div>
+                                    </a>
+                                    <div class="prices bold">
+                                        Rp.30.000
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 px-2">
+                            <div class="item">
+                                <div class="pic" style="width: 100%; padding-bottom: 120%;">
+                                    <div class="badge elv-2 bold">
+                                        Sale
+                                    </div>
+                                    <div class="images">
+                                        <a href="/single.html" class="d-block inner">
+                                            <img class="primary image-child" src="assets/img/bag-2.jpg" alt="#">
+                                            <img class="sub image-child" src="assets/img/bag-4.jpg" alt="#">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="details">
+                                    <a href="/single.html">
+                                        <div class="title bold">Product Name</div>
+                                    </a>
+                                    <div class="prices bold">
+                                        Rp.30.000
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 px-2">
+                            <div class="item">
+                                <div class="pic" style="width: 100%; padding-bottom: 120%;">
+                                    <div class="badge elv-2 bold">
+                                        Sale
+                                    </div>
+                                    <div class="images">
+                                        <a href="/single.html" class="d-block inner">
+                                            <img class="primary image-child" src="assets/img/bag-5.jpg" alt="#">
+                                            <img class="sub image-child" src="assets/img/bag-1.jpg" alt="#">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="details">
+                                    <a href="/single.html">
+                                        <div class="title bold">Product Name</div>
+                                    </a>
+                                    <div class="prices bold">
+                                        Rp.30.000
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 px-2">
+                            <div class="item">
+                                <div class="pic" style="width: 100%; padding-bottom: 120%;">
+                                    <div class="badge elv-2 bold">
+                                        Sale
+                                    </div>
+                                    <div class="images">
+                                        <a href="/single.html" class="d-block inner">
+                                            <img class="primary image-child" src="assets/img/bag-2.jpg" alt="#">
+                                            <img class="sub image-child" src="assets/img/bag-4.jpg" alt="#">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="details">
+                                    <a href="/single.html">
+                                        <div class="title bold">Product Name</div>
+                                    </a>
+                                    <div class="prices bold">
+                                        Rp.30.000
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div data-load='1' class="loadmore py-5 d-flex align-items-center justify-content-center">
+                <div class="loading spinner-border" role="status" hidden>
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+        <!-- footer content -->
+        <section class="site_footer">
+            <div class="content-container td-p-100">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="content site-links">
+                                <div class="title">Site Links</div>
+                                <nav class="links">
+                                    <ul>
+                                        <li><a href="#">About</a></li>
+                                        <li><a href="#">Contact</a></li>
+                                        <li><a href="#">Jobs</a></li>
+                                        <li><a href="#">Store Locations</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="content support">
+                                <div class="title">Support</div>
+                                <nav class="links">
+                                    <ul>
+                                        <li><a href="#">FAQ'S</a></li>
+                                        <li><a href="#">Order Tracking</a></li>
+                                        <li><a href="#">Terms & Conditions</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                        <li><a href="#">Return & Refund</a></li>
+                                        <li><a href="#">Support</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="content shop">
+                                <div class="title">Shop</div>
+                                <nav class="links">
+                                    <ul>
+                                        <li><a href="#">Women</a></li>
+                                        <li><a href="#">Men</a></li>
+                                        <li><a href="#">Accessories</a></li>
+                                        <li><a href="#">Pre-Order</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="content follow-us">
+                                <div class="title">Follow Us</div>
+                                <nav class="links">
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                 </nav>
+                            </div>
+                            <div class="content payment-options">
+                                <div class="title">Payment Options</div>
+                                <img src="assets/img/payment.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col my-4">
+                            <div class="copyright">© 2020 by Winst Bags</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- Scripts -->
+    <script src="assets/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,294 @@
+
+ /* ----------------------------------------
+ * 1.Home - Hero Slider 
+ * ---------------------------------------- */
+ section.home_hero-slider {
+    width: 100%;
+    padding-bottom: 50%;
+}
+
+#hero-slider {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    max-width: 1229px;
+    padding: 0 25px;
+    transform: translateX(-50%);
+}
+
+#hero-slider .swiper-wrapper {
+    
+}
+
+#hero-slider .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+#hero-slider .navigation {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 25px;
+}
+
+#hero-slider .navigation span {
+    display: block;
+    padding: 10px 10px 0 10px;
+    cursor: pointer;
+}
+
+#hero-slider .navigation span svg {
+    transition: transform .3s ease;
+}
+
+#hero-slider .navigation span.hero-prev:hover svg {
+    transform: translateX(-2px);
+}
+#hero-slider .navigation span.hero-next:hover svg {
+    transform: translateX(2px);
+}
+
+/* ----------------------------------------
+* 2.Home - Home caption
+* ---------------------------------------- */
+.home_caption .text {
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #121212;
+    text-align: center;
+}
+
+/* ----------------------------------------
+* 3.Home - Home Featured Item
+* ---------------------------------------- */
+
+.home_featured-item .item {
+    height: 370px;
+}
+
+.home_featured-item .item.pic {
+    width: 100%;
+    overflow: hidden;
+}
+
+.home_featured-item .item.pic .inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform .4s ease;
+    overflow: visible;
+}
+
+.home_featured-item .item.info {
+    padding: 25px;
+}
+
+.home_featured-item .item.info .desc {
+    font-size: 15px;
+    letter-spacing: .5px;
+}
+
+.home_featured-item .item.info .title {
+    font-size: 36px;
+}
+
+.home_featured-item .item.info .cta a {
+    line-height: 1rem;
+}
+
+.home_featured-item .item.info .cta a::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .2s ease;
+}
+
+.home_featured-item .item.info .cta a:hover::before,
+.home_featured-item .item.info .cta a:focus::before {
+    bottom: -4px;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.home_featured-item .item.info .cta a span {
+    line-height: 0.9;
+    transition: margin .2s ease .3s;
+}
+
+.home_featured-item .item.info .cta a:hover span {
+    margin-left: 5px;
+}
+
+
+/* ----------------------------------------
+* 4.Home - Home Selected Items
+* ---------------------------------------- */
+.products .head .cta a {
+    line-height: 1rem;
+}
+
+.products .head .cta a::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #b4b4b4;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .2s ease;
+}
+
+.products .head .cta a:hover::before,
+.products .head .cta a:focus::before {
+    bottom: -4px;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.products .head .cta a span {
+    line-height: 0.9;
+    transition: margin .2s ease .3s;
+}
+
+.products .head .cta a:hover span {
+    margin-left: 5px;
+}
+
+.products .item {
+    margin-bottom: 50px;
+}
+
+/* Pic */
+.products .item .pic {
+    position: relative;
+}
+.products .item .badge,
+.products .item .images,
+.products .item .focus-content {
+    position: absolute;
+}
+
+.products .item .images,
+.products .item .images .inner {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: transform .3s ease;
+}
+
+.products .item .images .sub {
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s ease;
+}
+
+.products .item:hover .images .sub {
+    opacity: 1;
+    visibility: visible;
+}
+
+.products .item .badge {
+    top: 20px;
+    left: 15px;
+    font-size: 13px;
+    border-radius: 12px;
+    color: #fff;
+    background: #ea3a57;
+    min-height: 22px;
+    padding: 0 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* Details */
+.products .item .details {
+    margin: 14px 0;
+}
+
+.products .item .details .title{
+    font-size: 16px;
+    color: #121212;
+    line-height: 1;
+    max-width: 100%;
+    transition: color .3s ease;
+    margin-bottom: 8px;
+}
+
+.products .item .details .title:hover{
+    color: hsl(204, 71%, 53%);
+}
+
+.products .item .details .prices {
+    line-height: 1.4;
+    font-size: 18px;
+    color: #ea3a57;
+}
+
+/* ===================================================================
+ * # Responsive  
+ * ------------------------------------------------------------------- */
+/* HP Only */
+@media (max-width: 768px) {
+   /* Home Caption font size */
+   .home_caption .text {
+       font-size: 20px;
+       text-align: left;
+       padding-left: 6%;
+   }
+   /* Home featured item height */
+   .home_featured-item .item {
+       height: 280px;
+   }
+   /* Home sale badge */
+   .products .item .badge {
+       top: 5%;
+       left: 5%;
+       font-size: 10px;
+       font-family: 'Proxima Nova' !important;
+       min-height: 0;
+       padding: 3% 5%;
+   }
+   /* Disable focus content */
+   .products .item .focus-content {
+       display: none !important;
+   }
+   /* Footer suscribe font size */
+   .site_suscribe .content h3 {
+       font-size: 24px;
+   }
+   .site_suscribe .content p {
+       font-size: 14px;
+   }
+}
+
+/* Tablet & HP */
+@media (max-width: 1200px) { 
+
+}
+
+/* Tablet Only */
+@media (min-width: 768px) and (max-width: 1200px) { 
+
+ }

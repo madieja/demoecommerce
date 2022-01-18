@@ -1,0 +1,17 @@
+.inner-content {
+    width: 420px;
+}
+
+.inner-content .content-header {
+    margin-bottom: 30px;
+}
+
+a.lostpassword {
+    font-size: 13px;
+}
+
+.content-form .privacy {
+width: 100%;
+color:rgba(0, 0, 0, 0.76);
+font-size:13.6px;
+}
