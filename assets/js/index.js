@@ -186,14 +186,14 @@ function loadmore(container, obs) {
                                 20% off
                             </div>
                             <div class="images">
-                                <a href="/single.html" class="d-block inner">
+                                <a href="/demoecommerce/single.html" class="d-block inner">
                                     <img class="primary image-child" src="assets/img/bag-1.jpg" alt="#">
                                     <img class="sub image-child" src="assets/img/bag-2.jpg" alt="#">
                                 </a>
                             </div>
                         </div>
                         <div class="details">
-                            <a href="/single.html">
+                            <a href="/demoecommerce/single.html">
                                 <div class="title bold">Product Name</div>
                             </a>
                             <div class="prices bold">
